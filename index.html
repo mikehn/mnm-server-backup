@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MNM Server Backup</title>
+<style>
+:root{--bg:#f5f7fc;--fg:#141a2b;--muted:#5a6275;--accent:#5b5bd6}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1020;--fg:#e8eaf2;--muted:#9aa1b5;--accent:#9d9cff}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:680px;margin:0 auto;padding:48px 16px}
+h1{font-size:1.8rem;margin:0 0 4px}h2{font-size:1.15rem;margin:28px 0 6px}
+p,li{color:var(--fg)}.muted{color:var(--muted)}a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+<h1>MNM Server Backup</h1>
+<p class="muted">A private tool, used only by its owner.</p>
+<p>MNM Server Backup copies the photo and video library on its owner's home server to the owner's own
+Google Drive, once a week, so there is a second copy away from home. It is not a public service: nobody
+else signs in to it.</p>
+<p>It runs on the home server with <a href="https://rclone.org">rclone</a>. It uploads new files, keeps
+the old version when a file changes, never deletes anything on Drive, and regularly checks that every
+file arrived intact.</p>
+<p><a href="privacy.html">Privacy policy</a></p>
+</main>
+</body>
+</html>
